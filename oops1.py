@@ -1,23 +1,32 @@
-#initiate a class
+# Initiate a class
 class employee:
-      #special method/magic method/dunder  method  -constructor
+      # Constructor: Initializes core attributes
       def __init__(self):
-            print("Started executing attributes/data")
             self.id = 123
             self.salary = 50000
             self.designation = "SDE"
-            print("Attribute/data has been in initaiated")
 
-
+      # A method that doesn't use 'self' – will cause issues if called via object
       def travel(self,destination):
-            print("This travel function was call manually")
-            print(f"Employee is now travlelling to {destination}")
+            print("This travel function was called manually")
+            print(f"Employee is now travelling to {destination}")
 
-#create an obj/instance of the class
+# Create an instance of the class
 sam = employee()
 
-#print(sam.id)
+# ✅ Dynamically adding a new attribute to the object outside the class
+sam.name = "Sam Kumar"
 
-sam.travel("kerala")
+# Accessing the dynamically created attribute
+print(sam.name)  # Output: Sam Kumar
 
-print(type(sam))
+# Accessing the attribute that was defined in __init__
+# print(sam.id)
+
+# sam.travel("kerala")
+
+# Check object type
+# print(type(sam))
+
+print(sam.__dict__)
+

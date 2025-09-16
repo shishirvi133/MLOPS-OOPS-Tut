@@ -10,8 +10,22 @@
    > easy to collab 
 
 5.End to End Project (Chatbook Class)
+   >Function vs methods
+   >magic method/dundermethod
+   >self
+   >You can create attribute outside class as well
    >Encapsulation
    >Getter and setter
    >static method
-
-
+6. Inheritance
+     >Inheritance code example
+     >Why inheritance is needed? (code reusability, parent has no access to child class)
+     >What gets inherited? - Constructor, Non private attributes, Non private methods
+     >Constructor overloading & method overloading
+     >Super keyword (can be used only inside class, can not access variables/attributes, used only inside child class)
+     >Types of inheritance -
+       1. Single Inheritance 
+       2. Multilevel 
+       3. Hierarchical 
+       4. Multiple (Diamond Problem) 
+       5. Hybrid
