@@ -9,4 +9,9 @@
    > debugging
    > easy to collab 
 
+5.End to End Project (Chatbook Class)
+   >Encapsulation
+   >Getter and setter
+   >static method
+
 
